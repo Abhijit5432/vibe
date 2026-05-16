@@ -28,9 +28,9 @@ export default function HomePage() {
   }, [inView]);
 
   return (
-    <div className="flex justify-center max-w-[1500px] mx-auto px-6 py-8 gap-12 xl:gap-20">
+    <div className="flex justify-center max-w-[1200px] mx-auto px-4 lg:px-8 py-8 gap-8">
       {/* ─── Feed ─────────────────────────────────────────────────── */}
-      <div className="flex-1 max-w-3xl mx-auto w-full">
+      <div className="flex-1 max-w-[600px] w-full">
         {/* Stories */}
         <StoriesRow />
 
@@ -73,8 +73,8 @@ export default function HomePage() {
       </div>
 
       {/* ─── Sidebar (Suggested Users) ────────────────────────────── */}
-      <div className="hidden xl:block w-[420px] flex-shrink-0">
-        <div className="sticky top-6">
+      <div className="hidden xl:block w-[350px] flex-shrink-0 relative">
+        <div className="sticky top-8 h-[calc(100vh-4rem)] overflow-y-auto overscroll-contain scrollbar-hide">
           <SuggestedUsers />
         </div>
       </div>

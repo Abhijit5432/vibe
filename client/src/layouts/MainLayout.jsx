@@ -41,7 +41,7 @@ export default function MainLayout({ children }) {
   return (
     <div className="flex min-h-screen bg-dark-100">
       {/* ─── Sidebar (Desktop) ──────────────────────────────────── */}
-      <aside className="hidden lg:flex flex-col w-80 fixed left-0 top-0 h-screen border-r border-white/5 bg-dark-50 z-40 py-8 px-6">
+      <aside className="hidden lg:flex flex-col w-[275px] fixed left-0 top-0 h-screen overflow-y-auto overscroll-contain scrollbar-hide border-r border-white/5 bg-dark-50 z-40 py-8 px-6">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-4 px-2 mb-10 group">
           <div className="w-12 h-12 gradient-bg rounded-2xl flex items-center justify-center shadow-glow group-hover:shadow-glow transition-shadow">
@@ -147,7 +147,7 @@ export default function MainLayout({ children }) {
       </nav>
 
       {/* ─── Main Content ────────────────────────────────────────── */}
-      <main className="flex-1 lg:ml-80 pb-20 lg:pb-0 min-h-screen">
+      <main className="flex-1 lg:ml-[275px] pb-20 lg:pb-0 min-h-screen">
         {children}
       </main>
 

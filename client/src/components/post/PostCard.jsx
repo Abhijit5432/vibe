@@ -164,13 +164,13 @@ export default function PostCard({ post }) {
             <video
               src={post.media[currentMedia].url}
               controls
-              className="w-full max-h-[850px] object-contain"
+              className="w-full max-h-[650px] object-contain bg-black"
             />
           ) : (
             <img
               src={post.media[currentMedia].url}
               alt="Post media"
-              className="w-full max-h-[850px] object-cover"
+              className="w-full max-h-[650px] object-contain bg-black"
               loading="lazy"
             />
           )}
